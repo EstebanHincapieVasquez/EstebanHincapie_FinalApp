@@ -1,3 +1,3 @@
 class Constants{
-  static String get apiUrl => 'https://inshortsapi.vercel.app/news?category=';
+  static String get apiUrl => 'https://vehicleszulu.azurewebsites.net';
 }

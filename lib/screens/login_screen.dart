@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:aplicacion_final_app/components/loader_component.dart';
+import 'package:aplicacion_final_app/models/token.dart';
+import 'package:aplicacion_final_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:http/http.dart' as http;
@@ -35,9 +39,9 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(height: 50,),
+                SizedBox(height: 120,),
                 _showLogo(),
-                SizedBox(height: 20,),
+                SizedBox(height: 50,),
                 _showButtons(),
               ],
             ),
@@ -61,14 +65,6 @@ class _LoginScreenState extends State<LoginScreen> {
       margin: EdgeInsets.only(left: 10, right: 10),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              //_showLoginButton(),
-              SizedBox(width: 20,),
-              //_showRegisterButton(),
-            ],
-          ),
           _showFacebookLoginButton(),
         ],
       ),
@@ -84,11 +80,12 @@ class _LoginScreenState extends State<LoginScreen> {
             icon: FaIcon(
               FontAwesomeIcons.facebook,
               color: Colors.white,
+              size: 80,
             ), 
-            label: Text('Iniciar sesión con Facebook'),
+            label: Text('Iniciar sesión\ncon Facebook', textScaleFactor: 2,),
             style: ElevatedButton.styleFrom(
               primary: Color(0xFF3B5998),
-              onPrimary: Colors.white
+              onPrimary: Colors.white,
             )
           )
         )
@@ -105,8 +102,60 @@ class _LoginScreenState extends State<LoginScreen> {
       final requestData = await FacebookAuth.i.getUserData(
         fields: "email, name, picture.width(800).heigth(800), first_name, last_name",
       );
-      print(requestData);
+      var picture = requestData['picture'];
+      var data = picture['data'];
+
+      Map<String, dynamic> request = {
+        'email': requestData['email'],
+        'id': requestData['id'],
+        'loginType': 2,
+        'fullName': requestData['name'],
+        'photoURL': data['url'],
+        'firtsName': requestData['first_name'],
+        'lastName': requestData['last_name'],
+      };
+
+      await _socialLogin(request);
     }
+  }
+
+  Future _socialLogin(Map<String, dynamic> request) async {
+    var url = Uri.parse('${Constants.apiUrl}/api/Account/SocialLogin');
+    var response = await http.post(
+      url,
+      headers: {
+        'content-type' : 'application/json',
+        'accept' : 'application/json',
+      },
+      body: jsonEncode(request),
+    );
+
+    setState(() {
+      _showLoader = false;
+    });
+
+    if(response.statusCode >= 400) {
+      await showAlertDialog(
+        context: context,
+        title: 'Error', 
+        message: 'El usuario ya inció sesión previamente por email o por otra red social.',
+        actions: <AlertDialogAction>[
+            AlertDialogAction(key: null, label: 'Aceptar'),
+        ]
+      );
+      return;
+    }
+
+    var body = response.body;
+
+    var decodedJson = jsonDecode(body);
+    var token = Token.fromJson(decodedJson);
+    Navigator.pushReplacement(
+      context, 
+      MaterialPageRoute(
+        builder: (context) => HomeScreen(token: token,)
+      )
+    );
   }
 
 }
