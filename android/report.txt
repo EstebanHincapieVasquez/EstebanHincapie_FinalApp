@@ -1,0 +1,148 @@
+
+> Task :app:signingReport
+Variant: debug
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: release
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: profile
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: debugUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: releaseUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: profileUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+
+> Task :connectivity:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: debugUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: releaseUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: profileUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+
+> Task :google_sign_in:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: debugUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: releaseUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+Variant: profileUnitTest
+Config: debug
+Store: C:\Users\Daniela\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 85:B2:64:A8:39:75:25:69:F8:A5:27:94:EC:95:A3:FB
+SHA1: DD:EE:02:AC:52:D8:FD:D8:3D:A6:77:F8:45:B0:A9:09:06:71:92:FB
+SHA-256: 0C:30:1B:51:35:B4:0B:3B:6A:74:A6:8E:17:52:12:7E:8F:DB:39:3B:B6:F5:23:E2:7A:AF:D4:5D:2B:41:EB:E5
+Valid until: jueves 14 de septiembre de 2051
+----------
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 3 executed
