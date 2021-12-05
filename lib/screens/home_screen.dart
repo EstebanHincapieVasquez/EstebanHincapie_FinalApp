@@ -445,10 +445,9 @@ class _HomeScreenState extends State<HomeScreen> {
           message: 'Encuesta almacenada con éxito.',
           actions: <AlertDialogAction>[
             AlertDialogAction(key: null, label: 'Aceptar'),
-          ]);
+        ]);
       }
     }
-
   }
 
   void _loadFieldValues() {
