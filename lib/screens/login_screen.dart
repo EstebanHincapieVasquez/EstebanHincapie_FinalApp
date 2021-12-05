@@ -19,13 +19,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  //String _email = '';
-  //String _emailError = '';
-  //bool _emailShowError = false;
-
-  //String _password = '';
-  //String _passwordError = '';
-  //bool _passwordShowError = false;
 
   bool _showLoader = false;
   
@@ -41,7 +34,9 @@ class _LoginScreenState extends State<LoginScreen> {
               children: <Widget>[
                 SizedBox(height: 120,),
                 _showLogo(),
-                SizedBox(height: 50,),
+                SizedBox(height: 30,),
+                _showWelcome(),
+                SizedBox(height: 30,),
                 _showButtons(),
               ],
             ),
@@ -53,10 +48,31 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _showLogo() {
-    return Image(
-      image: AssetImage('assets/vehicles_logo.png'),
-      width: 300,
-      fit: BoxFit.fill,
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(100),
+        child: Image(
+          image: AssetImage('assets/logo.png'),
+          fit: BoxFit.cover,
+          height: 200,
+          width: 200,
+        )
+    );
+  }
+
+  Widget _showWelcome() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Center(
+          child: Text('BIENVENIDO A LA ENCUESTA DEL CURSO \n\n    inicia sesión para realizar tu encuesta',
+              style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white
+            ),
+          ),
+        ),
+      ],
     );
   }
 
@@ -153,7 +169,7 @@ class _LoginScreenState extends State<LoginScreen> {
     Navigator.pushReplacement(
       context, 
       MaterialPageRoute(
-        builder: (context) => HomeScreen(token: token,)
+        builder: (context) => HomeScreen(token: token)
       )
     );
   }
